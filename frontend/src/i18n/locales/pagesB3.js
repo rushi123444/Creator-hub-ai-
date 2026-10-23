@@ -1,0 +1,26 @@
+const rows = [
+  ['l2s.desc', 'Paste a transcript, notes or a long script and get three short-form ideas to film.', 'ट्रांसक्रिप्ट, नोट्स या लंबी स्क्रिप्ट पेस्ट करें और फिल्माने के लिए तीन शॉर्ट आइडिया पाएँ।', 'ट्रान्सक्रिप्ट, नोट्स किंवा मोठी स्क्रिप्ट पेस्ट करा आणि चित्रित करण्यासाठी तीन शॉर्ट आयडिया मिळवा.'],
+  ['l2s.note', 'This tool suggests short ideas and scripts from your text. It is not a video editor and does not cut or export video.', 'यह टूल आपके टेक्स्ट से शॉर्ट आइडिया और स्क्रिप्ट सुझाता है। यह वीडियो एडिटर नहीं है और वीडियो नहीं काटता।', 'हे टूल तुमच्या मजकुरातून शॉर्ट आयडिया आणि स्क्रिप्ट सुचवते. हे व्हिडिओ एडिटर नाही आणि व्हिडिओ कट करत नाही.'],
+  ['l2s.generate', 'Create short ideas', 'शॉर्ट आइडिया बनाएँ', 'शॉर्ट आयडिया तयार करा'],
+  ['l2s.hook', 'Hook', 'हुक', 'हुक'],
+  ['l2s.idea', 'Short Idea', 'शॉर्ट आइडिया', 'शॉर्ट आयडिया'],
+  ['l2s.suggested', 'Suggested Duration', 'सुझाई गई अवधि', 'सुचवलेला कालावधी'],
+  ['l2s.keySection', 'Key Section', 'मुख्य हिस्सा', 'मुख्य भाग'],
+  ['l2s.script', 'Short Script', 'शॉर्ट स्क्रिप्ट', 'शॉर्ट स्क्रिप्ट'],
+  ['l2s.studio', 'Open in AI Studio', 'AI स्टूडियो में खोलें', 'AI स्टुडिओमध्ये उघडा'],
+  ['l2s.save', 'Save to Content', 'कंटेंट में सहेजें', 'कंटेंटमध्ये जतन करा'],
+  ['l2s.saved', 'Saved to Content', 'कंटेंट में सहेजा गया', 'कंटेंटमध्ये जतन केले'],
+  ['comp.desc', 'Study what a public channel posts and find gaps you can own.', 'देखें कि कोई सार्वजनिक चैनल क्या पोस्ट करता है और अपने लिए अवसर खोजें।', 'सार्वजनिक चॅनेल काय पोस्ट करते ते पहा आणि तुमच्यासाठी संधी शोधा.'],
+  ['comp.privacy', 'Only public information is analysed. Private analytics of any channel are never accessed.', 'केवल सार्वजनिक जानकारी का विश्लेषण किया जाता है। किसी भी चैनल के निजी एनालिटिक्स कभी नहीं देखे जाते।', 'फक्त सार्वजनिक माहितीचे विश्लेषण केले जाते. कोणत्याही चॅनेलचे खाजगी अॅनालिटिक्स कधीही पाहिले जात नाहीत.'],
+  ['comp.analyze', 'Analyze', 'विश्लेषण करें', 'विश्लेषण करा'],
+  ['comp.saved', 'Saved analyses', 'सहेजे गए विश्लेषण', 'जतन केलेली विश्लेषणे'],
+  ['comp.gaps', 'Possible content gaps', 'संभावित कंटेंट अंतराल', 'संभाव्य कंटेंट उणिवा'],
+  ['ed.desc', 'Find video editors and designers and contact them directly.', 'वीडियो एडिटर और डिज़ाइनर खोजें और सीधे संपर्क करें।', 'व्हिडिओ एडिटर आणि डिझायनर शोधा आणि थेट संपर्क साधा.'],
+  ['ed.note', 'This is a directory and contact system, not a payment marketplace. Agree on work and payment directly with the editor.', 'यह एक डायरेक्टरी और संपर्क प्रणाली है, पेमेंट मार्केटप्लेस नहीं। काम और भुगतान सीधे एडिटर से तय करें।', 'ही डिरेक्टरी आणि संपर्क प्रणाली आहे, पेमेंट मार्केटप्लेस नाही. काम आणि पेमेंट थेट एडिटरशी ठरवा.'],
+  ['ed.contact', 'Contact', 'संपर्क करें', 'संपर्क करा'],
+  ['ed.portfolio', 'Portfolio', 'पोर्टफोलियो', 'पोर्टफोलिओ'],
+  ['ed.report', 'Report profile', 'प्रोफ़ाइल रिपोर्ट करें', 'प्रोफाइल रिपोर्ट करा'],
+  ['ed.send', 'Send report', 'रिपोर्ट भेजें', 'रिपोर्ट पाठवा'],
+];
+const pick = (i) => Object.fromEntries(rows.map((r) => [r[0], r[i]]));
+export default { en: pick(1), hi: pick(2), mr: pick(3) };

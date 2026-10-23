@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>CreatorHub AI</title>
+    <meta
+      name="description"
+      content="CreatorHub AI helps creators plan, write and grow their content with AI-assisted ideas, trend insights and analytics. Create Smarter. Grow With Data."
+    />
+    <meta name="theme-color" content="#0a0a0b" />
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:title" content="CreatorHub AI" />
+    <meta property="og:description" content="Create Smarter. Grow With Data." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply the saved theme before first paint so there is no flash.
+      try {
+        var t = localStorage.getItem('ch_theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        var l = localStorage.getItem('ch_ui_lang');
+        if (l === 'hi' || l === 'mr' || l === 'en') document.documentElement.setAttribute('lang', l);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>CreatorHub AI needs JavaScript to run. Please enable it in your browser.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

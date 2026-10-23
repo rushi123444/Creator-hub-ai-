@@ -1,0 +1,204 @@
+/* ==========================================================================
+   CreatorHub AI design tokens
+   Dark-first. Light theme is opt-in via <html data-theme="light">.
+   Page authors: use these variables, never hard-code colours or radii.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #0a0a0b;
+  --surface: #111113;
+  --surface-2: #17171a;
+  --surface-3: #1e1e22;
+  --surface-hover: rgba(255, 255, 255, 0.04);
+  --surface-active: rgba(255, 255, 255, 0.07);
+  --overlay: rgba(4, 4, 6, 0.66);
+  --glass: rgba(10, 10, 11, 0.72);
+
+  /* Lines */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text: #f4f4f5;
+  --text-2: #d4d4d8;
+  --muted: #a1a1aa;
+  --faint: #71717a;
+  --on-accent: #ffffff;
+
+  /* Accent: indigo to violet, used sparingly */
+  --accent: #6366f1;
+  --accent-2: #8b5cf6;
+  --accent-hover: #7476f3;
+  --accent-soft: rgba(99, 102, 241, 0.14);
+  --accent-soft-2: rgba(99, 102, 241, 0.22);
+  --accent-text: #a5b4fc;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px rgba(129, 140, 248, 0.85);
+
+  /* Semantic */
+  --success: #34d399;
+  --success-soft: rgba(52, 211, 153, 0.12);
+  --warning: #fbbf24;
+  --warning-soft: rgba(251, 191, 36, 0.12);
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.12);
+  --info: #60a5fa;
+  --info-soft: rgba(96, 165, 250, 0.12);
+
+  /* Content status colours (StatusPill) */
+  --st-idea: #a1a1aa;
+  --st-draft: #fbbf24;
+  --st-script: #60a5fa;
+  --st-recording: #f472b6;
+  --st-editing: #a78bfa;
+  --st-scheduled: #38bdf8;
+  --st-published: #34d399;
+
+  /* Chart palette (validated on dark surfaces; used by chart helpers) */
+  --chart-1: #818cf8;
+  --chart-2: #34d399;
+  --chart-3: #fbbf24;
+  --chart-4: #f472b6;
+  --chart-5: #38bdf8;
+  --chart-6: #fb923c;
+  --chart-grid: rgba(255, 255, 255, 0.06);
+  --chart-axis: #71717a;
+
+  /* Radius */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* Elevation (soft, never neon) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+
+  /* Type */
+  --font: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans',
+    'Noto Sans Devanagari', 'Nirmala UI', 'Mangal', Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2.25rem;
+  --fs-4xl: 3rem;
+
+  /* Spacing scale (4px base) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 180ms;
+  --dur-slow: 280ms;
+
+  /* Layout */
+  --sidebar-w: 248px;
+  --sidebar-w-collapsed: 68px;
+  --topbar-h: 60px;
+  --bottomnav-h: 62px;
+  --page-max: 1240px;
+  --page-pad: 28px;
+
+  /* Layers */
+  --z-sticky: 20;
+  --z-sidebar: 40;
+  --z-topbar: 30;
+  --z-dropdown: 60;
+  --z-overlay: 80;
+  --z-modal: 90;
+  --z-toast: 100;
+  --z-tooltip: 110;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-2: #f4f4f5;
+  --surface-3: #e9e9ec;
+  --surface-hover: rgba(10, 10, 11, 0.045);
+  --surface-active: rgba(10, 10, 11, 0.08);
+  --overlay: rgba(10, 10, 14, 0.42);
+  --glass: rgba(255, 255, 255, 0.78);
+
+  --border: rgba(10, 10, 11, 0.09);
+  --border-strong: rgba(10, 10, 11, 0.18);
+
+  --text: #111113;
+  --text-2: #27272a;
+  --muted: #52525b;
+  --faint: #71717a;
+
+  --accent: #5457e6;
+  --accent-hover: #4648d6;
+  --accent-soft: rgba(84, 87, 230, 0.1);
+  --accent-soft-2: rgba(84, 87, 230, 0.17);
+  --accent-text: #4338ca;
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px rgba(84, 87, 230, 0.75);
+
+  --success: #059669;
+  --success-soft: rgba(5, 150, 105, 0.11);
+  --warning: #b45309;
+  --warning-soft: rgba(180, 83, 9, 0.11);
+  --danger: #dc2626;
+  --danger-soft: rgba(220, 38, 38, 0.09);
+  --info: #2563eb;
+  --info-soft: rgba(37, 99, 235, 0.09);
+
+  --st-idea: #52525b;
+  --st-draft: #b45309;
+  --st-script: #2563eb;
+  --st-recording: #be185d;
+  --st-editing: #6d28d9;
+  --st-scheduled: #0369a1;
+  --st-published: #047857;
+
+  --chart-1: #5457e6;
+  --chart-2: #059669;
+  --chart-3: #d97706;
+  --chart-4: #db2777;
+  --chart-5: #0284c7;
+  --chart-6: #ea580c;
+  --chart-grid: rgba(10, 10, 11, 0.07);
+  --chart-axis: #71717a;
+
+  --shadow-sm: 0 1px 2px rgba(10, 10, 20, 0.06);
+  --shadow: 0 8px 24px rgba(10, 10, 20, 0.08);
+  --shadow-lg: 0 24px 64px rgba(10, 10, 20, 0.16);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --page-pad: 20px;
+  }
+}
+@media (max-width: 640px) {
+  :root {
+    --page-pad: 16px;
+    --fs-2xl: 1.5rem;
+    --fs-3xl: 1.85rem;
+    --fs-4xl: 2.25rem;
+  }
+}
